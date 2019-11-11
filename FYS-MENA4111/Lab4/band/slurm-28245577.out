@@ -1,0 +1,60 @@
+Starting job 28245577 ("si_bulk") on c15-29 at Fri Sep 27 09:42:22 CEST 2019
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    4 cores,    1 groups
+ using from now: INCAR     
+ vasp.5.4.1 05Feb16 (build Mar 02 2016 14:09:44) complex                        
+  
+ POSCAR found type information on POSCAR  Si
+ POSCAR found :  1 types and       2 ions
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have a (more or less) 'small supercell' and for smaller cells      |
+|      it is recommended  to use the reciprocal-space projection scheme!      |
+|      The real space optimization is not  efficient for small cells and it   |
+|      is also less accurate ...                                              |
+|      Therefore set LREAL=.FALSE. in the  INCAR file                         |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.100703531960E+01    0.10070E+01   -0.22389E+03   320   0.438E+02
+DAV:   2    -0.108788943624E+02   -0.11886E+02   -0.11446E+02   536   0.624E+01
+DAV:   3    -0.109960489217E+02   -0.11715E+00   -0.11715E+00   360   0.780E+00
+DAV:   4    -0.109964905170E+02   -0.44160E-03   -0.44160E-03   560   0.517E-01
+DAV:   5    -0.109964908350E+02   -0.31800E-06   -0.31800E-06   336   0.101E-02    0.301E+00
+RMM:   6    -0.108712917123E+02    0.12520E+00   -0.53019E-02   323   0.138E+00    0.179E+00
+RMM:   7    -0.108144081426E+02    0.56884E-01   -0.10945E-01   325   0.208E+00    0.152E-01
+RMM:   8    -0.108156568450E+02   -0.12487E-02   -0.21744E-03   348   0.342E-01    0.227E-02
+RMM:   9    -0.108157517530E+02   -0.94908E-04   -0.14383E-04   366   0.900E-02    0.125E-02
+RMM:  10    -0.108157715269E+02   -0.19774E-04   -0.45944E-05   338   0.513E-02    0.263E-03
+RMM:  11    -0.108157699393E+02    0.15876E-05   -0.14948E-06   290   0.915E-03    0.550E-04
+RMM:  12    -0.108157697975E+02    0.14184E-06   -0.22345E-07   189   0.389E-03
+   1 F= -.10815770E+02 E0= -.10815770E+02  d E =0.000000E+00
+
+Currently Loaded Modulefiles:
+  1) Anaconda3/5.1.0       3) vesta/3.3.8           5) intel/2016.1
+  2) gnuplot/5.0.4         4) imagemagick/6.7.9-0   6) vasp/5.4.1.Feb16
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+28245577.ba+    216884K      2288K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+28245577        si_bulk          4                         00:00:08      0:0 
+28245577.0    pmi_proxy          1    279832K       514K   00:00:07      0:0 
+
+Job 28245577 ("si_bulk") completed on c15-29 at Fri Sep 27 09:42:29 CEST 2019

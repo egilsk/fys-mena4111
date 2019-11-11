@@ -1,0 +1,70 @@
+Starting job 28338278 ("jobname") on c15-33 at Fri Oct 11 12:23:24 CEST 2019
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    2 cores,    2 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jun 30 2017 11:15:00) complex          
+  
+ POSCAR found type information on POSCAR  Cu H 
+ POSCAR found :  2 types and       5 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have a (more or less) 'small supercell' and for smaller cells      |
+|      it is recommended  to use the reciprocal-space projection scheme!      |
+|      The real space optimization is not  efficient for small cells and it   |
+|      is also less accurate ...                                              |
+|      Therefore set LREAL=.FALSE. in the  INCAR file                         |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.196543901488E+03    0.19654E+03   -0.13944E+04  1808   0.922E+02
+DAV:   2    -0.107199266494E+02   -0.20726E+03   -0.20118E+03  1836   0.265E+02
+DAV:   3    -0.208919276986E+02   -0.10172E+02   -0.10001E+02  1896   0.783E+01
+DAV:   4    -0.210156421283E+02   -0.12371E+00   -0.12325E+00  1904   0.768E+00
+DAV:   5    -0.210170345429E+02   -0.13924E-02   -0.13924E-02  1960   0.561E-01    0.148E+01
+RMM:   6    -0.189398861405E+02    0.20771E+01   -0.44074E+01  1903   0.648E+01    0.743E+00
+RMM:   7    -0.171099087257E+02    0.18300E+01   -0.73205E+00  1790   0.274E+01    0.138E+00
+RMM:   8    -0.171522029575E+02   -0.42294E-01   -0.14471E-01  1936   0.316E+00    0.201E+00
+RMM:   9    -0.170474026694E+02    0.10480E+00   -0.58591E-02  1923   0.189E+00    0.812E-01
+RMM:  10    -0.170359420474E+02    0.11461E-01   -0.18146E-02  1899   0.114E+00    0.448E-01
+RMM:  11    -0.170300891954E+02    0.58529E-02   -0.10470E-02  1874   0.832E-01    0.105E-01
+RMM:  12    -0.170293806098E+02    0.70859E-03   -0.10829E-03  1896   0.280E-01    0.844E-02
+RMM:  13    -0.170289225862E+02    0.45802E-03   -0.52155E-04  1866   0.177E-01    0.421E-02
+RMM:  14    -0.170289333365E+02   -0.10750E-04   -0.28233E-04  1842   0.139E-01    0.288E-02
+RMM:  15    -0.170290693068E+02   -0.13597E-03   -0.10269E-04  1799   0.651E-02    0.202E-02
+RMM:  16    -0.170293907614E+02   -0.32145E-03   -0.10532E-04  1765   0.476E-02    0.934E-03
+RMM:  17    -0.170295232068E+02   -0.13245E-03   -0.46155E-05  1656   0.217E-02    0.829E-03
+RMM:  18    -0.170295740206E+02   -0.50814E-04   -0.65604E-06  1367   0.140E-02    0.633E-03
+RMM:  19    -0.170296169428E+02   -0.42922E-04   -0.18380E-06  1160   0.789E-03    0.589E-03
+RMM:  20    -0.170296448981E+02   -0.27955E-04   -0.11858E-06  1117   0.610E-03    0.567E-03
+RMM:  21    -0.170296563186E+02   -0.11420E-04   -0.40173E-07  1076   0.342E-03    0.568E-03
+RMM:  22    -0.170296617217E+02   -0.54031E-05   -0.16464E-07  1056   0.278E-03    0.562E-03
+RMM:  23    -0.170296621930E+02   -0.47122E-06   -0.11665E-08   404   0.122E-03
+   1 F= -.17029662E+02 E0= -.17021315E+02  d E =-.166954E-01
+
+Currently Loaded Modulefiles:
+  1) intel/2017.4         2) perf-reports/7.0.6
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+28338278.ba+    216884K      2327K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+28338278        jobname          4                         00:00:18      0:0 
+28338278.0    pmi_proxy          1    279832K       511K   00:00:15      0:0 
+
+Job 28338278 ("jobname") completed on c15-33 at Fri Oct 11 12:23:41 CEST 2019

@@ -1,0 +1,66 @@
+Dear Egil Sperstad Køller, welcome to Abel
+
+Your username is:               egilsk
+You may run jobs in project(s): 
+
+Abel is a joint venture where the main partners are: The Norwegian Research
+Council (Uninett Sigma2, via the Notur project) and the University of Oslo
+(Depts. of Astrophysics, Chemistry, Biology, CMBN, CEES and others).
+
+Abel is a cluster with 700+ nodes. Most nodes have 16 cores and 64 GiB memory
+(of which 61.5 GiB is available for jobs), in total 11,000+ cores and 52 TiB
+of memory. The CPUs are 8-core 2.6 GHz Intel E5-2670.  All nodes are connected
+to a low latency 56 Gbit/s Infiniband network and gigabit Ethernet.  All nodes
+have access to 600 TiB of BeeGFS parallel file system storage.  Abel users may
+apply for access to the 3 PiB NorStore storage facility.  For particularly
+large memory jobs, a few hugemem nodes with 1 TiB memory are accessible
+through the queue system.  Currently users can run regular parallel jobs up to
+512 cores.  Larger parallel jobs might be possible, but please contact us up
+front.
+
+Information about how to use Abel, the job scheduling system, modules,
+compilers and useful commands can be found at our web-site:
+
+   http://uio.no/hpc/abel/
+
+Follow the 'User Guide' link.  The Notur web site has information
+about all the national resources:
+
+  http://www.sigma2.no/
+
+By default, you can use up to 500 GiB of disk space in your home directory.
+The files in the home directory are backed up regularly.  Please put any files
+that do not _need_ backup (downloaded files, temporary files, etc.) in a
+directory called 'nobackup' to lower the load on the backup system.  More info
+about backup can be found in http://uio.no/hpc/abel/help/user-guide/data.html
+
+You log on to 'abel.uio.no' with username 'egilsk' and your UiO password.
+If you have received a UiO username but do not read UiO mail, you _must_
+set up mail forwarding: https://brukerinfo.uio.no/email/forward.php
+
+Please use 'qlogin' as described in
+http://uio.no/hpc/abel/help/user-guide/interactive-logins.html if you need to
+run test runs of more than 15 minutes in order to limit the load on the login
+nodes.
+
+Some useful commands as a user on the Abel system are:
+
+  sbatch <job-script-file>   Submit a job script to the queue system
+  squeue                     List of all jobs
+  pending                    List of all pending jobs
+  qsumm                      Summary information about queue usage
+  cost -u                    User CPU Usage information
+  cost -p                    Project CPU Usage information
+  projects                   Lists the projects you are member of
+  module avail               Lists available software Modules
+  module list                Lists your currently used software Modules
+  dusage                     List home directory disk usage
+  dusage -p <project>        List project disk usage
+
+For further information or user support contact hpc-drift@usit.uio.no.
+
+Welcome as an Abel user!
+
+-- 
+Sincerely,
+The UiO Research Computing Services team at USIT
