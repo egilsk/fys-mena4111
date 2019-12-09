@@ -76,8 +76,10 @@ if not ldos:
 
     plot(DOSdata[:,0],DOSdata[:,1])
 
-    xlabel('$E - E_{Fermi}$ (eV)')
-    ylabel('DOS (states/eV)')
+    xlim((-10,10))
+    ylim((-10,50))
+    xlabel('$E - E_{Fermi}$ [eV]')
+    ylabel('DOS [states/eV]')
 
     savefig('TDOS.png')
 
@@ -104,8 +106,10 @@ else:
         plot(DOSdata[:,0],DOSdata[:,1],label='s')
         plot(DOSdata[:,0],DOSdata[:,2],label='p')
         plot(DOSdata[:,0],DOSdata[:,3],label='d')
-    xlabel('$E - E_{Fermi}$ (eV)')
-    ylabel('DOS (states/eV)')
+    xlim((-10,10))
+    ylim((-0.8,4))
+    xlabel('$E - E_{Fermi}$ [eV]')
+    ylabel('DOS [states/eV]')
     legend()
     suptitle('LDOS atom no '+atom)
     savefig('LDOS'+atom+'.png')
